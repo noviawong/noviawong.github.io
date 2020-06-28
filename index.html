@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Novia Wong</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-logo-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-logo-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url_for('static', filename='safari-pinned-tab.svg') }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <!-- Navigation menu -->
+    <header>
+        <nav id="MyNav">
+           <a href="{{ url_for('index') }}" id="nav-logo-link">
+                <img id="nav-logo" src="{{ url_for('static', filename='logo-colored.png') }}" alt="Home">
+            </a>
+            <div id="navigation-id">
+                <!--<a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>-->
+                <a href="{{ url_for('UX') }}" class="{{pageclass('UX')}}">UX Projects</a>
+                        <!--<ul>
+                            <li><a href="{{ url_for('classprojects') }}">Class</a></li>
+                            <li><a href="{{ url_for('independent') }}">Independent</a></li>
+                        </ul>-->
+                <a href="{{ url_for('design') }}" class="{{pageclass('design')}}">Graphic Design</a>
+                <a href="{{ url_for('resume') }}" class="{{pageclass('resume')}}">Resume</a>
+                <a href="{{ url_for('contact') }}" class="{{pageclass('contact')}}">Contact</a>
+                <!--<a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>-->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+    
+<section class="tagline">
+    <div class="max">
+        <h1>Hi, I am Novia!</h1>
+        <h2>Researcher<br>UX Designer<br>90% Extrovert</h2>
+    </div>
+    <!--<div>
+        <img src="{{ url_for('static', filename='logo-colored.png') }}" alt="Novia's logo">
+    </div>-->
+</section>
+<br><br>
+
+<hr class="max">
+
+<div class="clear"></div>
+
+<section id="projecthighlights">
+    <div class="max">
+        <h2>Projects</h2>
+        <form action="{{ url_for('UX') }}" method="get"><button class="button-light">View All</button></form>
+        <div id="allprojectcards">
+        <div class="projectcard overlay col-5">
+            <a href="{{ url_for('techsmith') }}">
+                <img src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
+            </a>
+            <p class="">UX design internship at TechSmith, where I worked on two different product teams as a UX designer. Experiences with user research, web-based dashboard design, and desktop application design.</p>
+        </div>
+        <div class="projectcard overlay col-5">
+           <a href="{{ url_for('pianolink') }}">
+            <img src="{{ url_for('static', filename='pianolink.png') }}" alt="Learn more about PianoLink project.">
+           </a>
+            <p>Researched problems adult college piano learners faced and ideated solutions for them. PianoLink is a portal device that piano learners could take with them as they practice outside of their homes.</p>
+        </div>
+        <div class="clear"></div>
+        <div class="projectcard overlay col-5">
+            <a href="{{ url_for('decision_aid') }}">
+                <img src="{{ url_for('static', filename='Decision_Aid.png') }}" alt="Learn more about my project on redesigning a bariatric decision aid.">
+            </a>
+            <p>Consultant for a local health informatics company on user research and web-based decision aid design for bariatric surgery. Decision aid improves the current surgical outcomes calculator by including education and potential lifestyle changes for the users.</p>
+        </div>
+        <div class="projectcard overlay col-5">
+            <a href="{{ url_for('thesis') }}">
+                <img src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
+            </a>
+            <p>A quantitative research project that looked at how users stored, managed, and created their passwords. Tested on password memorability and users' attitudes, along with habits toward their existing passwords.</p>
+        </div>
+        </div>
+        <br class="clear"><br>
+    </div>
+</section>
+
+<hr class="max">
+
+<section id="experiences">
+    <div class="max">
+        <h2>Experiences</h2>
+        <form action="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}" method="get" target="_blank"><button class="button-light">Download Resume</button></form>
+        <img src="{{ url_for('static', filename='Experiences.png') }}" alt="My undergraduate was at San Jose State University, where I earned a Bachelor of Science in Psychology, worked as a behavioral therapist, and served as a research assistant at a cyber security lab. I am currently going to the University of Michigan Ann Arbor, and I am part of the School of Information. There, I worked as a UX designer Intern, a graduate student instructor, and I focus on UX Research and Design as part of my Masters program.">
+    </div>
+</section>
+
+<hr class="max">
+
+<section id="aboutme" class="clear">
+    <div class="max">
+        <h2>About Me</h2>
+        <br>
+        <figure>
+            <img id="profilepic" src="{{ url_for('static', filename='Novia_ref.png') }}" alt="Image of Novia">
+        </figure>
+        <br class="clear">
+        <p>I am a second year master student at University of Michigan School of Information, studying user experience research and design. I also hold a Bachelor of Science in Psychology. <br><br>My passion is deeply rooted in psychology and advancing technology for the vulnerable population, such as children with special needs. Other interest areas include healthcare and education technology; through my work in teaching K-12 and college students, I have experienced first-handed the power of technology in an educational setting.<br><br>I believe good design is supported by compelling research data, and one way to get that data is through user research. Among the many different techniques, I particularly enjoy talking to and observing people. By doing these two things, I can learn a lot about people.<br><br>My strengths include empathy, communication, and mixed research methods in quantitative and qualitative methods. My time as a behavioral therapist has taught me the importance of empathy, especially since i was working with children who could not advocate for themselves effectively. I have also worked in multiple leadership positions, and have increased the organization size, productivity, and the level of positive attitudes toward events hosted by the organizations.<br><br>Outside of school and work, I also enjoy: playing the piano, baking, volunteering, and making comic strips. I also love making new friends and learning something new everyday!</p>
+    </div>
+</section>
+
+<!--Footer starts here-->
+<div class="clear"><br><br></div>
+<footer>
+    <div>
+        <p class="col-4">
+            &copy; Copyright Novia Wong, Feburary 2019
+        </p>
+        <a href="https://github.com/noviawong" target="_blank">
+            <img class="socialicons" src="{{ url_for('static', filename='Github-logo.png') }}" alt="Go to my GitHub profile.">
+        </a>
+        <a href="https://www.linkedin.com/in/novia-wong" target="_blank">
+            <img class="socialicons" src="{{ url_for('static', filename='LinkedIn-logo.png') }}" alt="Go to my LinkedIn profile.">
+        </a>
+        <a href="https://www.instagram.com/novia_artdesigns/" target="_blank">
+            <img class="socialicons" src="{{ url_for('static', filename='Instagram-logo.png') }}" alt="Go to my Instagram design profile.">
+        </a>
+         <a id="aboutwebsite" href="{{ url_for('about')}}">About Website</a>
+    </div>
+</footer>
+
+<!--Javascript-->
+<script>
+function myFunction() {
+    var x = document.getElementById("MyNav");
+    if (x.className === "navigation"){
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+</script>
+</body>
+</html>
