@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Novia Wong</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-logo-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">-->
+</head>
+
+<body>
+    <!-- Navigation menu -->
+    <header>
+        <nav>
+          <div class="max">
+            <img id="nav-logo" src="images/logo-colored.png" alt="Novia's logo">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a class="current" href="aboutme.html">About Me</a>
+            </div>
+            <!--Small screen menu-->
+            <div class="overlay-topnav" id="navtabs">
+              <a href="javascript:void(0)" class="hamburger-close" onclick="closeNav()">Close</a>
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a class="current" href="aboutme.html">About Me</a>
+              </div>
+            </div>
+            <a class="hamburger" href="javascript:void(0);" onclick="openNav()">
+              <div class="hamburgerbar1"></div>
+              <div class="hamburgerbar2"></div>
+              <div class="hamburgerbar3"></div>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+    <div class="max">
+        <h1>About Me</h1>
+    </div>
+
+    <section class="max">
+      <div class="max-container">
+        <figure>
+          <img id="aboutmeprofilepic" src="images/michiganprofile.png" alt="Image of Novia with Michigan sweater">
+        </figure>
+        <p>Hi! It’s me, Novia!</p><br>
+        <p>After switching my career trajectories several times, I realized that one way for me to make a difference in the world is to improve healthcare for people while doing something that I love -- researching, teaching, and designing!</p><br>
+        <p>I also realized I like working with children and youth a lot, especially because no matter how hard I try, I still end up staying involved with <a href="https://www.firstinspires.org/">FIRST (For Inspiration and Recognition of Science and Technology)</a>. So I thought, why not focus on improving healthcare technology for children and youth? That’s how I found my research interests.</p>
+        <figure>
+          <img id="hobbyillustration" src="images/me.png" alt="Illustration of Novia and her hobbies">
+        </figure>
+        <p>Outside of research and UX design, I love doodling, watching TV and movies (Disney especially), and bake. I’m also trying to learn a few new things, Japanese and a string instrument to be specific!</p>
+      </div>
+    </section>
+
+
+
+    <!--Footer starts here-->
+    <div class="clear"><br><br></div>
+    <footer>
+        <div class="max">
+            <p>Last Updated Jan 2021</p>
+            <a href="aboutwebsite.html">About Website</a>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script>
+    function openNav() {
+      document.getElementById("navtabs").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("navtabs").style.height = "0%";
+    }
+    </script>
+  </body>
+</html>

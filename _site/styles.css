@@ -1,0 +1,690 @@
+/*Mobile*/
+body {
+margin: 0px;
+max-width:100%;
+}
+
+.max {
+max-width:1200px;
+margin: auto;
+}
+
+.max-container{
+  margin-left:16px;
+  margin-right:16px;
+}
+
+.center{
+margin-left: auto;
+margin-right: auto;
+}
+
+.clear{
+clear: both;
+}
+
+/*Typography*/
+
+h1 {
+text-align: center;
+font-size: 32px;
+font-family: 'Kalam', cursive;
+color: rgb(60,101,167);
+padding-top: 48px;
+margin-top: 32px;
+margin-left: auto;
+margin-right: auto;
+font-weight: 400;
+}
+
+h2 {
+text-align: left;
+color: rgb(60,101,167);
+font-size: 24px;
+font-family: 'Kalam', cursive;
+padding-top: 24px;
+padding-bottom: 16px;
+margin: auto;
+font-weight: 400;
+}
+
+h3 {
+text-align: left;
+color: rgb(30,30,30);
+font-size: 16px;
+font-family: 'Kalam', cursive;
+padding-top: 16px;
+padding-bottom: 16px;
+margin: auto;
+font-weight: 400;
+}
+
+h4 {
+text-align: left;
+color: rgb(109,119,135);
+font-size: 16px;
+font-family: 'Lato', sans-serif;
+padding-top: 4px;
+padding-bottom: 4px;
+margin: auto;
+font-weight: 400;
+}
+
+p, ul, li{
+text-align: left;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+text-decoration: none;
+color: rgb(60,60,60);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.8;
+margin:auto;
+}
+
+a {
+color: rgb(60,101,167);
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+.caption {
+text-align: left;
+color: rgb(109,119,135);
+font-size: 14px;
+font-family: 'Lato', sans-serif;
+padding-top: 4px;
+padding-bottom: 4px;
+margin: auto;
+font-weight: 400;
+}
+
+hr{
+margin-top: 32px;
+border: 1px solid rgb(225, 234, 250);
+}
+
+nav {
+background-color: rgb(255, 255, 255);
+width: 100%;
+overflow: hidden;
+top: 0;
+padding: 0px;
+margin: 0px;
+box-shadow: 0px 2px 6px rgb(225, 234, 250);
+position: fixed;
+}
+
+#nav-logo {
+width: 20%;
+display: inline;
+float: left;
+}
+
+nav a{
+display: inline-block;
+text-decoration: none;
+text-align: center;
+color: rgb(60,60,60);
+font-size: 16px;
+padding: 15px 40px;
+font-size: 100%;
+margin: auto;
+overflow: hidden;
+}
+
+nav .current{
+border-bottom: 3px solid rgb(60,101,167);
+font-weight: 700;
+}
+
+nav a:hover{
+background-color: rgb(225, 234, 250);
+color: rgb(60, 101, 167);
+}
+
+.topnav{
+  display: none;
+}
+
+/*Hamburger Menu*/
+.hamburger {
+  display: block;
+  cursor: pointer;
+  float:right;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+.hamburgerbar1, .hamburgerbar2, .hamburgerbar3 {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(60,101,167);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.overlay-topnav {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(225,234,250);
+  overflow-y: hidden;
+  transition: 0.4s;
+}
+
+.overlay-topnav a.hamburger-close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: rgb(60,101,167);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.overlay-content a{
+  width: 20%;
+  margin-bottom: 32px;
+  display: block;
+}
+
+/*buttons*/
+.primarybutton{
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left:32px;
+padding-right: 32px;
+background-color: rgb(60,101,167);
+color: rgb(255,255,255);
+border: 1px solid rgb(60,101,167);
+border-radius: 8px;
+font-size: 16px;
+}
+
+.primarybutton:hover{
+  color: rgb(60,101,167);
+  background-color: rgb(225, 234, 250);
+  border-color: rgb(225,234,250);
+  cursor: pointer;
+}
+
+.secondarybutton{
+padding-top:8px;
+padding-bottom:8px;
+background-color: rgb(255, 255, 255);
+color: rgb(60, 101, 167);
+border: 1px solid rgb(60, 101, 167);
+border-radius: 8px;
+font-size: 16px;
+}
+
+.secondarybutton:hover{
+background-color: rgb(225, 234, 250);
+border-color: rgb(225,234,250);
+cursor: pointer;
+}
+
+.button-accordion{
+padding-top: 32px;
+padding-bottom: 0px;
+margin: auto;
+background-color: rgb(255,255,255);
+display: block;
+}
+
+/*Home Page*/
+.sectioncard{
+border-radius: 4px;
+border: 1px solid rgb(225,234,250,1);
+box-shadow: 0px 4px 4px 0px rgb(160,184,222,0.25);
+margin-left:16px;
+margin-right: 16px;
+margin-bottom: 32px;
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+.sectioncard h2{
+text-align: center;
+}
+
+.sectioncard p{
+text-align: left;
+max-width: 702px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 32px;
+margin-bottom: 32px;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.sectioncard img{
+max-width: 160px;
+padding: 0px;
+margin: auto;
+display: block;
+}
+
+.sectioncard a.secondarybutton{
+display: block;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+width: 90%;
+text-align: center;
+text-decoration: none;
+}
+
+.cardcontainer {
+margin: auto;
+}
+
+.cards{
+box-shadow: 0 4px 4px rgba(160, 184, 222, 0.25);
+background-color: rgb(255,255,255);
+max-width: 696px;
+text-align: center;
+border-radius: 4px;
+display: inline-block;
+margin-right: 16px;
+margin-left: 16px;
+margin-bottom: 16px;
+}
+
+.cards h3{
+text-align: center;
+background-color: rgb(60,101,167);
+color: rgb(255,255,255);
+}
+
+.cards img{
+max-width: 80px;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+
+.cards p{
+padding-right: 16px;
+padding-left: 16px;
+margin-top: 16px;
+margin-bottom: 16px;
+text-align: left;
+}
+
+.cards .secondarybutton{
+display: inline-block;
+margin-left: 16px;
+margin-right: 16px;
+margin-bottom: 32px;
+cursor: pointer;
+width: 90%;
+}
+
+/*Research Cards*/
+/*#researcher{
+background-color: rgb(225, 234, 250);
+}*/
+
+#researcher img{
+max-width: 80px;
+border-radius: 80%;
+}
+
+#researcher .cards img{
+border-radius: 0%;
+max-width: 80px;
+}
+
+/*Design Cards*/
+/*#designer{
+background-color: rgb(60,101,167);
+}*/
+
+#designer img{
+max-width: 80px;
+border-radius: 80%;
+}
+
+#designer .cards img{
+border-radius: 0%;
+max-width: 160px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.whitetext{
+color: rgb(255,255,255);
+}
+
+#contact img{
+border-radius: 80%;
+max-width: 80px;
+background-color: rgb(242,225,128);
+}
+
+#contact h3{
+text-align: left;
+max-width: 702px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 32px;
+padding-bottom: 0px;
+color: rgb(60,101,167);
+}
+
+#email {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(60,101,167);
+}
+
+#linkedin {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(60,101,167);
+}
+
+
+/*Resume Page*/
+.resumesection{
+  display: block;
+  margin-left: 8px;
+  margin-top: 32px;
+}
+
+#resume{
+  margin-left:16px;
+  margin-right:16px;
+}
+
+#resume img{
+max-width: 28px;
+display: inline-block;
+float: left;
+}
+
+#resume a{
+  display: inline-block;
+  text-decoration: none;
+}
+
+#resume h2{
+  padding: 0px;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+#resume h3{
+padding-top: 24px;
+padding-bottom: 0px;
+color: rgb(60,101,167);
+}
+
+#resume ul{
+  padding-left: 24px;
+}
+
+#resume li{
+  margin-bottom:8px;
+}
+
+/*About Me Page*/
+#aboutmeprofilepic{
+  max-width: 160px;
+  padding: 0px;
+  margin: auto;
+  display: block;
+}
+
+#hobbyillustration{
+  max-width: 300px;
+  padding: 0px;
+  margin: auto;
+  display: block;
+}
+
+/*Footer*/
+footer {
+background-color: rgb(225,234,250);
+}
+
+footer p{
+margin: 20px;
+display: inline-block;
+}
+
+#aboutwebsite{
+text-decoration: none;
+}
+
+#aboutwebsite:hover{
+text-decoration: underline;
+}
+
+.socialicons{
+float: left;
+width: 40px;
+margin: 20px;
+}
+
+.visible-mobile {
+   display: none !important;
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1140px){
+  .max-container{
+    max-width: 702px;
+    margin: auto;
+  }
+
+  .topnav{
+    display: inline-block;
+    float: right;
+  }
+
+    #nav-logo {
+    max-width: 52px;
+    margin-top:8px;
+    display: inline;
+    float: left;
+    }
+
+    .hamburger{
+    display: none;
+    }
+
+    .sectioncard a.secondarybutton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 70%;
+    }
+
+    .cardcontainer {
+    margin: auto;
+    padding: 8px;
+    }
+
+    .cards {
+    margin-left: 8px;
+    margin-right: 8px;
+    max-width: 304px;
+    }
+
+    #aboutmeprofilepic{
+      max-width: 160px;
+    }
+
+    #hobbyillustration{
+      width: 600px;
+    }
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1140px){
+    h1 {
+    text-align: left;
+    }
+
+    .max-container{
+      max-width: 702px;
+      margin: auto;
+    }
+
+    .topnav{
+    display: block;
+    float: right;
+    }
+
+    #nav-logo {
+    max-width: 56px;
+    margin-top:8px;
+    display: inline;
+    float: left;
+    }
+
+    .hamburger{
+    display: none;
+    }
+
+    .sectioncard{
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .sectioncard a.secondarybutton{
+    width: 20%;
+    }
+
+    .cardcontainer {
+    margin: auto;
+    padding: 16px;
+    }
+
+    .cards {
+    margin-left:8px;
+    margin-right:8px;
+    max-width: 368px;
+    }
+
+    .cards p {
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+
+    .cards .secondarybutton{
+    width: 90%;
+    }
+
+    #aboutmeprofilepic{
+      max-width: 200px  ;
+    }
+
+    #hobbyillustration{
+      max-width: 600px;
+    }
+
+    #resume{
+      margin-left:0px;
+      margin-right:0px;
+    }
+
+    /*responsive columns*/
+    .col-1 {
+    width: 8.33%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-2 {
+    width: 16.66%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-3 {
+    width: 25%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-4 {
+    width: 33.33%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-5 {
+    width: 41.66%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-6 {
+    width: 50%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-7 {
+    width: 58.33%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-8 {
+    width: 66.66%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-9 {
+    width: 75%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-10 {
+    width: 83.33%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-11 {
+    width: 91.66%;
+    float: left;
+    padding: 24px;
+    }
+
+    .col-12 {
+    width: 100%;
+    float: left;
+    padding: 24px;
+    }
+}

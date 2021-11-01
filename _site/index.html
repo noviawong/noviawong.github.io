@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Novia Wong</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-logo-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">-->
+</head>
+
+<body>
+    <!-- Navigation menu -->
+    <header>
+        <nav>
+          <div class="max">
+            <img id="nav-logo" src="images/logo-colored.png" alt="Novia's logo">
+            <div class="topnav">
+                <a class="current" href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a href="aboutme.html">About Me</a>
+            </div>
+            <!--Small screen menu-->
+            <div class="overlay-topnav" id="navtabs">
+              <a href="javascript:void(0)" class="hamburger-close" onclick="closeNav()">Close</a>
+              <div class="overlay-content">
+                <a class="current" href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a href="aboutme.html">About Me</a>
+              </div>
+            </div>
+            <a class="hamburger" href="javascript:void(0);" onclick="openNav()">
+              <div class="hamburgerbar1"></div>
+              <div class="hamburgerbar2"></div>
+              <div class="hamburgerbar3"></div>
+            </a>
+          </div>
+        </nav>
+    </header>
+
+    <div class="max">
+        <h1>Nice to meet you!</h1>
+    </div>
+
+    <!--About Me-->
+    <section>
+        <div class="max sectioncard">
+            <h2>I am Novia</h2>
+            <figure>
+                <img src="images/profilepic.png" alt="Image of Novia">
+            </figure>
+            <p>I am a first year Informatics PhD student at <a href="https://www.informatics.uci.edu/">University of California Irvine</a>, advised by Dr. Madhu Reddy. My research and design interests include patient-provider collaboration and self-management technology for children and youth with mental health needs.
+            </p>
+            <a href="aboutme.html" class="secondarybutton" role="button" aria-pressed="true">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!--Research Projects-->
+    <section>
+        <div class="max sectioncard" id="researcher">
+            <h2>A Researcher</h2>
+            <figure>
+                <img src="images/research.png" alt="Decorative icon of the researcher section">
+            </figure>
+            <p>I hold a MS in Information from <a href="https://www.si.umich.edu/">University of Michigan</a>, with a focus on UX Research/Design and HCI, and a BS in Psychology from <a href="https://www.sjsu.edu/">San Jose State University</a>.</p>
+            <div class="cardcontainer">
+                <div class="cards">
+                <h3>Child-Centered Intervention</h3>
+                <img src="images/Child.png" alt="Decorative icon for the child-centered intervention project">
+                <p>Leverage a child’s role as the natural focus of their care team to help bridge communication gaps and facilitate collaboration.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>Memory and Password Security</h3>
+                <img src="images/password.png" alt="Decorative icon for the memory and password security project">
+                <p>Investigate password composition requirements’ effects on users’ recall ability, self-predicted memorability, and perceived security.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>Cybersecurity & Human Factors</h3>
+                <img src="images/cybersecurity.png" alt="Decorative icon for the cybersecurity and human factors project">
+                <p>A NSF funded study focusing on understanding human cognition in cyber network defense and human decision making models.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Design Projects-->
+    <section>
+        <div class="max sectioncard" id="designer">
+            <h2>A UX Designer</h2>
+            <figure>
+                <img src="images/ux_design.png" alt="Decorative icon for the design section">
+            </figure>
+            <p>My process involves identifying user needs and iterating design solutions through mixed method user research. I also create deliverables for development teams through working with product managers.</p>
+            <div class="cardcontainer">
+                <div class="cards">
+                <h3>NowPow: PowRx, NowRx, CommRx, FindRx</h3>
+                <img src="images/NowPow.png" alt="Screenshots of the NowPow product design">
+                <p>Research and design referral webapps for care providers, case managers, and patients. Referrals focus on social needs.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>TechSmith: Hotkeys and Favorites</h3>
+                <img src="images/TechSmith.png" alt="Screenshots of the Camtasia product design">
+                <p>Designed new functionalities for a video editing desktop application, Camtasia, including hotkeys and favorites.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>Bariatric Surgery Decision Aid</h3>
+                <img src="images/Bariatric.png" alt="High fidelity mock example for the bariatric surgery decision aid">
+                <p>Researched and designed a decision aid  with educational materials on post-surgery life style changes for bariatric patients.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section>
+        <div class="max sectioncard" id="contact">
+            <h2>A 90% Extrovert</h2>
+            <figure>
+                <img src="images/contact.png" alt="Decorative icon for the contact section">
+            </figure>
+            <p>Let’s talk!</p>
+            <p>If you are interested in working with me or learning about my past/current work, please contact me.</p>
+            <p>Otherwise, I would still love to chat with you!</p>
+            <h3>Email</h3>
+            <a href="mailto:noviaw@uci.edu"><p id="email">noviaw@uci.edu</p></a>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/novia-wong" target="_blank"><p id="linkedin">https://www.linkedin.com/in/novia-wong</p></a>
+            <!--<a href="mailto:noviaw@umich.edu" class="secondarybutton" role="button" aria-pressed="true">Send Me an Email!</a>-->
+        </div>
+    </section>
+
+
+<!--Footer starts here-->
+<div class="clear"><br><br></div>
+<footer>
+    <div class="max">
+        <p>Last Updated Jan 2021</p>
+        <a href="aboutwebsite.html">About Website</a>
+    </div>
+</footer>
+
+<!--Javascript-->
+<script>
+function openNav() {
+  document.getElementById("navtabs").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("navtabs").style.height = "0%";
+}
+/*function myFunction() {
+  var x = document.getElementById("navtabs");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}*/
+
+/*function myFunction(x) {
+  x.classList.toggle("change");
+}*/
+</script>
+</body>
+</html>

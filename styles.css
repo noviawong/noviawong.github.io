@@ -304,7 +304,8 @@ margin-bottom: 16px;
 
 .cards h3{
 text-align: center;
-background-color: rgb(242,225,128);
+background-color: rgb(60,101,167);
+color: rgb(255,255,255);
 }
 
 .cards img{
@@ -331,9 +332,9 @@ width: 90%;
 }
 
 /*Research Cards*/
-#researcher{
+/*#researcher{
 background-color: rgb(225, 234, 250);
-}
+}*/
 
 #researcher img{
 max-width: 80px;
@@ -346,17 +347,13 @@ max-width: 80px;
 }
 
 /*Design Cards*/
-#designer{
+/*#designer{
 background-color: rgb(60,101,167);
-}
+}*/
 
 #designer img{
 max-width: 80px;
 border-radius: 80%;
-}
-
-#designer h2{
-color: rgb(255,255,255);
 }
 
 #designer .cards img{
