@@ -4,165 +4,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Novia Wong</title>
-    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-logo-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-logo-16x16.png') }}">
-    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ url_for('static', filename='safari-pinned-tab.svg') }}" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-logo-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">-->
 </head>
 
 <body>
     <!-- Navigation menu -->
     <header>
-        <nav id="MyNav">
-           <a href="{{ url_for('index') }}" id="nav-logo-link">
-                <img id="nav-logo" src="{{ url_for('static', filename='logo-colored.png') }}" alt="Home">
-            </a>
-            <div id="navigation-id">
-                <!--<a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>-->
-                <a href="{{ url_for('UX') }}" class="{{pageclass('UX')}}">UX Projects</a>
-                        <!--<ul>
-                            <li><a href="{{ url_for('classprojects') }}">Class</a></li>
-                            <li><a href="{{ url_for('independent') }}">Independent</a></li>
-                        </ul>-->
-                <a href="{{ url_for('design') }}" class="{{pageclass('design')}}">Graphic Design</a>
-                <a href="{{ url_for('resume') }}" class="{{pageclass('resume')}}">Resume</a>
-                <a href="{{ url_for('contact') }}" class="{{pageclass('contact')}}">Contact</a>
-                <!--<a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>-->
-                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <nav>
+          <div class="max">
+            <img id="nav-logo" src="images/logo-colored.png" alt="Novia's logo">
+            <div class="topnav">
+                <a class="current" href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a href="aboutme.html">About Me</a>
             </div>
+            <!--Small screen menu-->
+            <div class="overlay-topnav" id="navtabs">
+              <a href="javascript:void(0)" class="hamburger-close" onclick="closeNav()">Close</a>
+              <div class="overlay-content">
+                <a class="current" href="index.html">Home</a>
+                <a href="resume.html">Resume/CV</a>
+                <a href="aboutme.html">About Me</a>
+              </div>
+            </div>
+            <a class="hamburger" href="javascript:void(0);" onclick="openNav()">
+              <div class="hamburgerbar1"></div>
+              <div class="hamburgerbar2"></div>
+              <div class="hamburgerbar3"></div>
+            </a>
+          </div>
         </nav>
     </header>
-    
-<section class="tagline">
+
     <div class="max">
-        <h1>Hi, I am Novia!</h1>
-        <h2>Researcher<br>UX Designer<br>90% Extrovert</h2>
+        <h1>Nice to meet you!</h1>
     </div>
-    <!--<div>
-        <img src="{{ url_for('static', filename='logo-colored.png') }}" alt="Novia's logo">
-    </div>-->
-</section>
-<br><br>
 
-<hr class="max">
-
-<div class="clear"></div>
-    
-<section id="aboutme" class="clear">
-    <div class="max">
-        <h2>About Me</h2>
-        <br>
-        <figure>
-            <img id="profilepic" src="{{ url_for('static', filename='Novia_ref.png') }}" alt="Image of Novia">
-        </figure>
-        <br class="clear">
-        <p> I am a product designer at NowPow, creating social determinant healthcare technology to facilitate whole-person care for all.<br><br>I hold a MS in Information from University of Michigan, with a focus on User Experience Research and Design/HCI, and a BS in Psychology from San Jose State University.<br><br>My passions are deeply rooted in psychology and advancing behavioral management technology for populations such as children with autism. Other research and design interests include healthcare and educational technology. Based on my past interaction with K-12 children through robotics mentoring and summer camps, the population I am interested in working with is primarily K-12 students.</p>
-    </div>
-</section>
-    
-<hr class="max">
-
-<section id="projecthighlights">
-    <div class="max">
-        <h2>Projects</h2>
-        <form action="{{ url_for('UX') }}" method="get"><button class="button-light">View All</button></form>
-        <div id="allprojectcards">
-        <div class="projectcard overlay col-5">
-            <a href="{{ url_for('techsmith') }}">
-                <img src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
-            </a>
-            <p class="">UX design internship at TechSmith, where I worked on two different product teams as a UX designer. Experiences with user research, web-based dashboard design, and desktop application design.</p>
+    <!--About Me-->
+    <section>
+        <div class="max sectioncard">
+            <h2>I am Novia</h2>
+            <figure>
+                <img src="images/profilepic.png" alt="Image of Novia">
+            </figure>
+            <p>I am a product designer at <a href="https://nowpow.com">NowPow</a>, creating healthcare technology to facilitate whole-person care, with a focus on social needs. My research and design interests include patient-provider collaboration and self-management technology for children and youth with mental/behavioral health needs and other chronic illnesses.
+            </p>
+            <a href="aboutme.html" class="secondarybutton" role="button" aria-pressed="true">Learn More About Me</a>
         </div>
-        <div class="projectcard overlay col-5">
-           <a href="{{ url_for('pianolink') }}">
-            <img src="{{ url_for('static', filename='pianolink.png') }}" alt="Learn more about PianoLink project.">
-           </a>
-            <p>Researched problems adult college piano learners faced and ideated solutions for them. PianoLink is a portal device that piano learners could take with them as they practice outside of their homes.</p>
-        </div>
-        <div class="clear"></div>
-        <div class="projectcard overlay col-5">
-            <a href="{{ url_for('decision_aid') }}">
-                <img src="{{ url_for('static', filename='Decision_Aid.png') }}" alt="Learn more about my project on redesigning a bariatric decision aid.">
-            </a>
-            <p>Consultant for a local health informatics company on user research and web-based decision aid design for bariatric surgery. Decision aid improves the current surgical outcomes calculator by including education and potential lifestyle changes for the users.</p>
-        </div>
-        <div class="projectcard overlay col-5">
-            <a href="{{ url_for('thesis') }}">
-                <img src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
-            </a>
-            <p>A quantitative research project that looked at how users stored, managed, and created their passwords. Tested on password memorability and users' attitudes, along with habits toward their existing passwords.</p>
-        </div>
-        </div>
-        <br class="clear"><br>
-    </div>
-</section>
+    </section>
 
-<hr class="max">
+    <!--Research Projects-->
+    <section>
+        <div class="max sectioncard" id="researcher">
+            <h2>A Researcher</h2>
+            <figure>
+                <img src="images/research.png" alt="Decorative icon of the researcher section">
+            </figure>
+            <p>I hold a MS in Information from <a href="https://www.si.umich.edu/">University of Michigan</a>, with a focus on UX Research/Design and HCI, and a BS in Psychology from <a href="https://www.sjsu.edu/">San Jose State University</a>.</p>
+            <div class="cardcontainer">
+                <div class="cards">
+                <h3>Child-Centered Intervention</h3>
+                <img src="images/Child.png" alt="Decorative icon for the child-centered intervention project">
+                <p>Leverage a child’s role as the natural focus of their care team to help bridge communication gaps and facilitate collaboration.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
 
-<section id="experiences">
-    <div class="max">
-        <h2>Experiences</h2>
-        <form action="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}" method="get" target="_blank"><button class="button-light">Download Resume</button></form>
-        <img src="{{ url_for('static', filename='Experiences.png') }}" alt="My undergraduate was at San Jose State University, where I earned a Bachelor of Science in Psychology, worked as a behavioral therapist, and served as a research assistant at a cyber security lab. I am currently going to the University of Michigan Ann Arbor, and I am part of the School of Information. There, I worked as a UX designer Intern, a graduate student instructor, and I focus on UX Research and Design as part of my Masters program.">
-    </div>
-</section>
+            <div class="cards">
+                <h3>Memory and Password Security</h3>
+                <img src="images/password.png" alt="Decorative icon for the memory and password security project">
+                <p>Investigate password composition requirements’ effects on users’ recall ability, self-predicted memorability, and perceived security.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
 
-<hr class="max">
+            <div class="cards">
+                <h3>Cybersecurity & Human Factors</h3>
+                <img src="images/cybersecurity.png" alt="Decorative icon for the cybersecurity and human factors project">
+                <p>A NSF funded study focusing on understanding human cognition in cyber network defense and human decision making models.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Design Projects-->
+    <section>
+        <div class="max sectioncard" id="designer">
+            <h2>A UX Designer</h2>
+            <figure>
+                <img src="images/ux_design.png" alt="Decorative icon for the design section">
+            </figure>
+            <p class="whitetext">My process involves identifying user needs and iterating design solutions through mixed method user research. I also create deliverables for development teams through working with product managers.</p>
+            <div class="cardcontainer">
+                <div class="cards">
+                <h3>NowPow: PowRx, NowRx, CommRx, FindRx</h3>
+                <img src="images/NowPow.png" alt="Screenshots of the NowPow product design">
+                <p>Research and design referral webapps for care providers, case managers, and patients. Referrals focus on social needs.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>TechSmith: Hotkeys and Favorites</h3>
+                <img src="images/TechSmith.png" alt="Screenshots of the Camtasia product design">
+                <p>Designed new functionalities for a video editing desktop application, Camtasia, including hotkeys and favorites.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+
+            <div class="cards">
+                <h3>Bariatric Surgery Decision Aid</h3>
+                <img src="images/Bariatric.png" alt="High fidelity mock example for the bariatric surgery decision aid">
+                <p>Researched and designed a decision aid  with educational materials on post-surgery life style changes for bariatric patients.</p>
+                <!--<button class="secondarybutton">Read More  →</button>-->
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section>
+        <div class="max sectioncard" id="contact">
+            <h2>A 90% Extrovert</h2>
+            <figure>
+                <img src="images/contact.png" alt="Decorative icon for the contact section">
+            </figure>
+            <p>Let’s talk!</p>
+            <p>If you are interested in working with me or learning about my past/current work, please contact me.</p>
+            <p>Otherwise, I would still love to chat with you!</p>
+            <h3>Email</h3>
+            <a href="mailto:noviaw@umich.edu"><p id="email">noviaw@umich.edu</p></a>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/novia-wong" target="_blank"><p id="linkedin">https://www.linkedin.com/in/novia-wong</p></a>
+            <!--<a href="mailto:noviaw@umich.edu" class="secondarybutton" role="button" aria-pressed="true">Send Me an Email!</a>-->
+        </div>
+    </section>
 
 
 <!--Footer starts here-->
 <div class="clear"><br><br></div>
 <footer>
-    <div>
-        <p class="col-4">
-            &copy; Copyright Novia Wong, Feburary 2019
-        </p>
-        <a href="https://github.com/noviawong" target="_blank">
-            <img class="socialicons" src="{{ url_for('static', filename='Github-logo.png') }}" alt="Go to my GitHub profile.">
-        </a>
-        <a href="https://www.linkedin.com/in/novia-wong" target="_blank">
-            <img class="socialicons" src="{{ url_for('static', filename='LinkedIn-logo.png') }}" alt="Go to my LinkedIn profile.">
-        </a>
-        <a href="https://www.instagram.com/novia_artdesigns/" target="_blank">
-            <img class="socialicons" src="{{ url_for('static', filename='Instagram-logo.png') }}" alt="Go to my Instagram design profile.">
-        </a>
-         <a id="aboutwebsite" href="{{ url_for('about')}}">About Website</a>
+    <div class="max">
+        <p>Last Updated Jan 2021</p>
+        <a href="aboutwebsite.html">About Website</a>
     </div>
 </footer>
 
 <!--Javascript-->
 <script>
-function myFunction() {
-    var x = document.getElementById("MyNav");
-    if (x.className === "navigation"){
-        x.className += " responsive";
-    } else {
-        x.className = "navigation";
-    }
+function openNav() {
+  document.getElementById("navtabs").style.height = "100%";
 }
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+function closeNav() {
+  document.getElementById("navtabs").style.height = "0%";
 }
+/*function myFunction() {
+  var x = document.getElementById("navtabs");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}*/
 
+/*function myFunction(x) {
+  x.classList.toggle("change");
+}*/
 </script>
 </body>
 </html>
