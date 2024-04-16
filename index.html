@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,6 +24,7 @@
             <img id="nav-logo" src="images/logo-colored.png" alt="Novia's logo">
             <div class="topnav">
                 <a class="current" href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
                 <a href="resume.html">Resume/CV</a>
                 <a href="aboutme.html">About Me</a>
             </div>
@@ -32,6 +33,7 @@
               <a href="javascript:void(0)" class="hamburger-close" onclick="closeNav()">Close</a>
               <div class="overlay-content">
                 <a class="current" href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
                 <a href="resume.html">Resume/CV</a>
                 <a href="aboutme.html">About Me</a>
               </div>
@@ -45,18 +47,16 @@
         </nav>
     </header>
 
-    <div class="max">
-        <h1>Nice to meet you!</h1>
-    </div>
-
     <!--About Me-->
-    <section>
+    <section id="aboutme">
         <div class="max sectioncard">
-            <h2>I am Novia</h2>
+            <h2>Nice to meet you! I am Novia.</h2>
             <figure>
                 <img src="images/profilepic.png" alt="Image of Novia">
             </figure>
-            <p>I am a first year Informatics PhD student at <a href="https://www.informatics.uci.edu/">University of California Irvine</a>, advised by Dr. Madhu Reddy. My research and design interests include patient-provider collaboration and self-management technology for children and youth with mental health needs.
+            <p>I am a third year Informatics PhD student at <a href="https://www.informatics.uci.edu/">University of California Irvine</a>, advised by <a href="https://scholar.google.com/citations?hl=en&user=ZD-2ddIAAAAJ&view_op=list_works&sortby=pubdate">Dr. Madhu Reddy</a> . I study and design digital tools to support collaborative mental health management. My research aims to support adolescents and families, but I have also worked with other populations like older adults and young adults. 
+            </p>
+            <p>Leveraging my background in psychology and product design, I take a user-centric/HCI approach in my research to create engaging, culturally relevant, and need-appropriate digital mental health tools.
             </p>
             <a href="aboutme.html" class="secondarybutton" role="button" aria-pressed="true">Learn More About Me</a>
         </div>
@@ -65,31 +65,30 @@
     <!--Research Projects-->
     <section>
         <div class="max sectioncard" id="researcher">
-            <h2>A Researcher</h2>
-            <figure>
-                <img src="images/research.png" alt="Decorative icon of the researcher section">
-            </figure>
-            <p>I hold a MS in Information from <a href="https://www.si.umich.edu/">University of Michigan</a>, with a focus on UX Research/Design and HCI, and a BS in Psychology from <a href="https://www.sjsu.edu/">San Jose State University</a>.</p>
+            <h2>I'm a researcher.</h2>
+            <p>I hold a MS from <a href="https://www.si.umich.edu/">University of Michigan</a> in Information Science, specializing in UX Research/Design and HCI, and a BS from <a href="https://www.sjsu.edu/">San Jose State University</a> in Psychology. Some of my research highlights:</p>
             <div class="cardcontainer">
                 <div class="cards">
-                <h3>Child-Centered Intervention</h3>
-                <img src="images/Child.png" alt="Decorative icon for the child-centered intervention project">
-                <p>Leverage a child’s role as the natural focus of their care team to help bridge communication gaps and facilitate collaboration.</p>
-                <!--<button class="secondarybutton">Read More  →</button>-->
-            </div>
-
-            <div class="cards">
-                <h3>Memory and Password Security</h3>
-                <img src="images/password.png" alt="Decorative icon for the memory and password security project">
-                <p>Investigate password composition requirements’ effects on users’ recall ability, self-predicted memorability, and perceived security.</p>
-                <!--<button class="secondarybutton">Read More  →</button>-->
-            </div>
-
-            <div class="cards">
-                <h3>Cybersecurity & Human Factors</h3>
-                <img src="images/cybersecurity.png" alt="Decorative icon for the cybersecurity and human factors project">
-                <p>A NSF funded study focusing on understanding human cognition in cyber network defense and human decision making models.</p>
-                <!--<button class="secondarybutton">Read More  →</button>-->
+                    <h3>Understanding and Evaluating Cultural Relevannce of Digital Mental Health Tools</h3>
+                    <img src="images/ux_design.png" alt="Decorative icon for the design section">
+                    <p>Working with the Asian American adolescent and young adult populations, we conduct focus groups, digital ethnographic research, and participatory design workshops to identify design requirements for creating culturally relevant digital mental health tools.</p>
+                    <!--<button class="secondarybutton">Read More  →</button>-->
+                    <p>Read selected publications:</br>coming soon</p>
+                </div>
+                <div class="cards">
+                    <h3>Designing Voice-Activated Mental Health Services for Older Adults and Caregivers</h3>
+                    <img src="images/VAYMO.png" alt="Decorative icon for the voice assistant project">
+                    <p>The process includes need-elicitation, participatory design sessions, prototype and software development, and clinical trials. This research is a part of Northwestern University's Center for Behavioral Intervention Technologies (CBITs) and funded by NIMH.</p>
+                    <!--<button class="secondarybutton">Read More  →</button>-->
+                    <p>Read selected publications: </br>coming soon</p>
+                </div>
+                 <div class="cards">
+                    <h3>Evaluating Cyber Security and User Experience of Effective Password Creation</h3>
+                    <img src="images/password.png" alt="Decorative icon for the memory and password security project">
+                    <p>We conducted interviews, mind-mapping, sysemtatic review, and a survey-based experiment to investgate various aspects of cyber security, including password composition requirements’ effects on users’ recall ability, self-predicted memorability, and perceived security.</p>
+                    <!--<button class="secondarybutton">Read More  →</button>-->
+                    <p>Read selected publications: <a href="https://link.springer.com/chapter/10.1007/978-3-319-94782-2_13#Sec6">AHFE 2018</a>, <a href="https://drive.google.com/file/d/1rWgs9RD1-akVE9XybTjDIDnooZxKZR58/view?usp=sharing">Senior Honor Thesis</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -97,16 +96,13 @@
     <!--Design Projects-->
     <section>
         <div class="max sectioncard" id="designer">
-            <h2>A UX Designer</h2>
-            <figure>
-                <img src="images/ux_design.png" alt="Decorative icon for the design section">
-            </figure>
-            <p>My process involves identifying user needs and iterating design solutions through mixed method user research. I also create deliverables for development teams through working with product managers.</p>
+            <h2>I'm also a UX designer.</h2>
+            <p>My process involves identifying user needs and iterating design solutions through mixed method user research. I collaborate with product managers and developers to create high fidelity interactive protoypes using Adobe XD and Figma.</p>
             <div class="cardcontainer">
                 <div class="cards">
                 <h3>NowPow: PowRx, NowRx, CommRx, FindRx</h3>
                 <img src="images/NowPow.png" alt="Screenshots of the NowPow product design">
-                <p>Research and design referral webapps for care providers, case managers, and patients. Referrals focus on social needs.</p>
+                <p>Researched and designed referral webapps for care providers, case managers, and patients. Referrals focus on social needs.</p>
                 <!--<button class="secondarybutton">Read More  →</button>-->
             </div>
 
@@ -129,13 +125,12 @@
     <!--Contact-->
     <section>
         <div class="max sectioncard" id="contact">
-            <h2>A 90% Extrovert</h2>
+            <h2>Let's chat!</h2>
             <figure>
                 <img src="images/contact.png" alt="Decorative icon for the contact section">
             </figure>
-            <p>Let’s talk!</p>
             <p>If you are interested in working with me or learning about my past/current work, please contact me.</p>
-            <p>Otherwise, I would still love to chat with you!</p>
+            <p>Or, send me an email/message to start a conversation about my crocheting projects and my experience in the sunny state of California!</p>
             <h3>Email</h3>
             <a href="mailto:noviaw@uci.edu"><p id="email">noviaw@uci.edu</p></a>
             <h3>LinkedIn</h3>
@@ -149,7 +144,7 @@
 <div class="clear"><br><br></div>
 <footer>
     <div class="max">
-        <p>Last Updated Jan 2021</p>
+        <p>Last Updated Apr 2024</p>
         <a href="aboutwebsite.html">About Website</a>
     </div>
 </footer>
