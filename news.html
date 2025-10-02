@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Novia Wong</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-logo-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <!--<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">-->
+</head>
+
+<body>
+    <!-- Navigation menu -->
+    <header>
+        <nav>
+          <div class="max">
+            <img id="nav-logo" src="images/logo-colored.png" alt="Novia's logo">
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="resume.html">CV</a>
+                <a class="current" href="news.html">News</a>
+            </div>
+            <!--Small screen menu-->
+            <div class="overlay-topnav" id="navtabs">
+              <a href="javascript:void(0)" class="hamburger-close" onclick="closeNav()">Close</a>
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="resume.html">CV</a>
+                <a class="current" href="news.html">News</a>
+              </div>
+            </div>
+            <a class="hamburger" href="javascript:void(0);" onclick="openNav()">
+              <div class="hamburgerbar1"></div>
+              <div class="hamburgerbar2"></div>
+              <div class="hamburgerbar3"></div>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+    <div class="max">
+        <h1>News and Recent Updates</h1>
+    </div>
+
+    <section class="max">
+      <div class="publicationsection">
+       <h2 class="col-3">2025</h2>
+            <div class="col-8">
+                <ul>
+                    <li>[September 2025] This marks the start of my fifth year in my PhD journey! </li>
+                    <li>[August 2025] I presented two posters at the 13th meeting of ISRII (San Diego, CA).</li>
+                    <li>[June 2025] I attended HCIC (Lake Geneva, WI) as a PhD student!</li>
+                    <li>[May 2025] I attended and presented at CHI 2025, receiving a Honorabl Mention Award on one of the three papers I authored. I also chaired a SIG session to discuss designing mental health technologies with consideration of culture, power, and justice.</li>
+                    <li>[Feb 2025] I was invited to compete as a semi-finalist at the UCI Grad Slam.</li>
+                </ul>
+            </div>
+      </div>
+
+       <hr class="clear max">
+
+        <div>
+            <h2 class="col-3">2024</h2>
+            <div class="col-8">
+                <ul>
+                    <li>[November 2024] The Equity and Action (TEA) special interest group is officially a SIG for ISRII. I will be the co-president for the SIG alongside Dr. Page Anderson and Dr. Terry Fleming.</li>
+                    <li>[August 2024] Several faculty members and PhD students and I flew to Beijing, China to meet with our project partner for the Cyrus Tang Foundation project on college students' mental health.</li>
+                    <li>[July 2024] I visited Copenhagen, Denmark for the first time to present at DIS 2024!</li>
+                    <li>[June 2024] I flew to Limerick, Ireland to present a poster and flash talk at the 12th meeting of ISRII.</li>
+                    <li>[April 2024] I have successfully advanced to PhD candidacy!</li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Footer starts here-->
+    <div class="clear"><br><br></div>
+    <footer>
+        <div class="max">
+            <p>Last Updated Oct 2025</p>
+            <a href="aboutwebsite.html">About Website</a>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+    <script>
+    function openNav() {
+      document.getElementById("navtabs").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("navtabs").style.height = "0%";
+    }
+    </script>
+  </body>
+</html>

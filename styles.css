@@ -28,7 +28,7 @@ clear: both;
 h1 {
 text-align: center;
 font-size: 32px;
-font-family: 'Kalam', cursive;
+font-family: "Montserrat", sans-serif;
 color: rgb(60,101,167);
 padding-top: 48px;
 margin-top: 32px;
@@ -41,7 +41,7 @@ h2 {
 text-align: left;
 color: rgb(60,101,167);
 font-size: 24px;
-font-family: 'Kalam', cursive;
+font-family: "Montserrat", sans-serif;
 padding-top: 24px;
 padding-bottom: 16px;
 margin: auto;
@@ -52,7 +52,7 @@ h3 {
 text-align: left;
 color: rgb(30,30,30);
 font-size: 18px;
-font-family: 'Kalam', cursive;
+font-family: "Montserrat", sans-serif;
 padding-top: 16px;
 padding-bottom: 16px;
 margin: auto;
@@ -298,12 +298,21 @@ margin: auto;
 display: block;
 }
 
+.sectioncard a.primarybutton{
+display: block;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+width: 50%;
+text-align: center;
+text-decoration: none;
+}
 .sectioncard a.secondarybutton{
 display: block;
 margin-left: auto;
 margin-right: auto;
 cursor: pointer;
-width: 90%;
+width: 50%;
 text-align: center;
 text-decoration: none;
 }
